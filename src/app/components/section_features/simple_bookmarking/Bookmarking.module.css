@@ -1,5 +1,5 @@
 .book_in_click {
-    position: relative;
+    
     width: 100%;
 }
 
@@ -10,6 +10,7 @@
 }
 
 .book_in_click section .section_banner {
+    position: relative;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -57,11 +58,24 @@
 
 .add_effect {
     position: absolute;
-    bottom: -10px;
-    left: -200px;
-    height: 72%;
-    width: 60%;
+    bottom: -50px;
+    left: -400px;
+    height: 80%;
+    width: 120%;
     background-color: hsl(231, 69%, 60%);
     z-index: -10000;
     border-radius: 0px 90px 90px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .book_in_click section {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .book_in_click section .section_banner {
+        & img {
+            width: 400px;
+        }
+    }
 }

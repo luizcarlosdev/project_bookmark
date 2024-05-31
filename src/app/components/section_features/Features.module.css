@@ -96,3 +96,48 @@
         padding: .3px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .features_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & ul {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+            & li {
+                width: 90%;
+                position: relative;
+                border-bottom: .6px solid hsl(240, 1%, 86%);
+                padding: 25px 0px;
+            }
+
+            & li:nth-of-type(1) {
+                border-top: .6px solid hsl(240, 1%, 86%);
+            }
+
+            & li.add_item_effect:before {
+                left: 32%;
+                right: 50%;
+                bottom: 0;
+                width: 150px;
+                height: 2px;
+            }
+        }
+
+        & ul:before {
+            display: none;
+        }
+    }
+
+    .container .features {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        place-content: center;
+    }
+}

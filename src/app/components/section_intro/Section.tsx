@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Styles from './Section.module.css';
 import Container from '../container/Container';
 
@@ -18,8 +19,8 @@ export default function Section() {
                     </article>
                     <div className={Styles.hero_banner}>
                         <img src="images/illustration-hero.svg" alt="" />
+                        <div className={Styles.effect}></div>
                     </div>
-                    <div className={Styles.effect}></div>
                 </section>
             </Container>
         </div>

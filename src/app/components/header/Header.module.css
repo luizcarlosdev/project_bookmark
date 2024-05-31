@@ -51,3 +51,9 @@
         color: hsl(0, 94%, 66%);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header_list_options {
+        display: none;
+    }
+}

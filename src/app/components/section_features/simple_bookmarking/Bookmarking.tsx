@@ -18,6 +18,7 @@ export default function Bookmarking(props: ItemsBookmarking) {
                 <section>
                     <div className={Styles.section_banner}>
                         <img src={props.image} alt="" />
+                        <div className={Styles.add_effect}></div>
                     </div>
                     <div className={Styles.section_intro}>
                         <h2>{props.title}</h2>
@@ -26,7 +27,6 @@ export default function Bookmarking(props: ItemsBookmarking) {
                     </div>
                 </section>
             </Container>
-            <div className={Styles.add_effect}></div>
         </div>
     )
 }
