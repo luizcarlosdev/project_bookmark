@@ -1,0 +1,104 @@
+.section {
+    width: 100%;
+    position: relative;
+}
+
+.section section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0px;
+}
+
+.section section article {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+
+    & h1 {
+        color: hsl(229, 31%, 21%);
+        text-transform: capitalize;
+        font-size: 2.5rem;
+    }
+
+    & p {
+        display: grid;
+        color: hsl(229, 8%, 60%);
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: left;
+        line-height: 1.8em;
+        text-wrap: wrap;
+    }
+}
+
+.section section article .btn_group_choose {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section section article .btn_group_choose button {
+    width: 140px;
+    height: 42px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: .85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.section section article .btn_group_choose .btn_01 {
+    color: #fff;
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+    transition: all .5s ease;
+}
+
+.section section article .btn_group_choose .btn_01:hover {
+    color: hsl(231, 69%, 60%);
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.296);
+}
+
+.section section article .btn_group_choose .btn_02 {
+    background-color: #e2e0e0;
+    border: 2px solid #e2e0e0;
+}
+
+.section section article .btn_group_choose .btn_02:hover {
+    background-color: transparent;
+    border-color: #222;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.296);
+}
+
+.hero_banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        position: absolute;
+        height: auto;
+        width: 500px;
+        object-fit: cover;
+    }
+}
+
+.effect {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 38%;
+    height: 70%;
+    background-color: hsl(231, 69%, 60%);
+    z-index: -1000000;
+    border-radius: 90px 0px 0px 90px;
+}

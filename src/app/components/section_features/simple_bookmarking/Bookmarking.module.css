@@ -1,0 +1,71 @@
+.book_in_click {
+    position: relative;
+    width: 100%;
+}
+
+.book_in_click section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    padding: 25px 0px;
+}
+
+.book_in_click section .section_banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.book_in_click section .section_intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 45px;
+
+    & h1 {
+        color: hsl(229, 31%, 21%);
+    }
+
+    & p {
+        color:  hsl(229, 8%, 60%);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    & button {
+        background-color: hsl(231, 69%, 60%);
+        color: #fff;
+        width: 130px;
+        height: 45px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+.add_effect {
+    position: absolute;
+    bottom: -10px;
+    left: -200px;
+    height: 72%;
+    width: 60%;
+    background-color: hsl(231, 69%, 60%);
+    z-index: -10000;
+    border-radius: 0px 90px 90px 0px;
+}
