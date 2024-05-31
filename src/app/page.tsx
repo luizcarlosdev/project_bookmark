@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "./components/header/Header";
 import Section from "./components/section_intro/Section";
 import Features from "./components/section_features/Features";
+import Dowload from "./components/options_dowloads_card/Dowload";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Section />
       <Features />
+      <Dowload />
     </main>
   );
 }

@@ -115,6 +115,10 @@
 
     .hero_banner {
         order: 1;
+
+        & img {
+            width: 350px;
+        }
     }
 
     .section section article {

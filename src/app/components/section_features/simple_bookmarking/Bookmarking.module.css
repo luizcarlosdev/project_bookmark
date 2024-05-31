@@ -75,7 +75,7 @@
 
     .book_in_click section .section_banner {
         & img {
-            width: 400px;
+            width: 350px;
         }
     }
 }

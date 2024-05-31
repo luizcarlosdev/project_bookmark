@@ -1,0 +1,49 @@
+.section_dowload {
+    width: 100%;
+    margin: 60px 0px;
+    padding: 40px 0px;
+}
+
+.section_dowload .dowload_area {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 5px;
+}
+
+.section_dowload .dowload_area .dowload_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+    & h1 {
+        color: hsl(229, 31%, 21%);
+    }
+
+    & p {
+        color: hsl(229, 8%, 60%);
+        line-height: 1.6rem;
+    }
+}
+
+.dowload_cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+@media screen and (max-width: 768px) {
+    .dowload_cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section_dowload .dowload_area {
+        gap: 45px;
+    }
+}

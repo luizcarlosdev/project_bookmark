@@ -98,6 +98,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .section_features {
+        margin-top: 40px;
+    }
     .features_list {
         display: flex;
         align-items: center;
