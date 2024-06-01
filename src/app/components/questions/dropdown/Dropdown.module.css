@@ -9,6 +9,9 @@
     gap: 20px;
     padding: 15px 0px;
     border-bottom: 2px solid hsl(227, 12%, 78%);
+    transition: all .5s ease;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .dropdown_header {
@@ -16,6 +19,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: hsl(229, 31%, 21%);
+    cursor: pointer;
+
+    & h4 {
+        transition: all .5s ease;
+    }
+
+    /* & h4:hover {
+        color: hsl(0, 94%, 66%);
+    } */
 
     & button {
         background-color: transparent;
@@ -26,5 +39,26 @@
         justify-content: center;
         font-size: 1.2rem;
         border: none;
+        cursor: pointer;
+    }
+}
+
+.dropdown_header:hover h4 {
+    color: hsl(0, 94%, 66%) !important;
+}
+
+.dropdown_body {
+    width: 100%;
+
+    & p {
+        text-align: justify;
+        line-height: 1.5rem;
+        color: hsl(229, 8%, 60%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        width: 300px;
     }
 }

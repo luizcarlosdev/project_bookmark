@@ -8,6 +8,17 @@
     grid-template-columns: 1fr;
     place-items: center;
     gap: 45px;
+
+    & .btn_more_info:last-child {
+        width: 150px;
+        height: 45px;
+        background-color: hsl(231, 69%, 60%);
+        border: none;
+        border-radius: 5px;
+        font-size: .95rem;
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 .questions_header {
@@ -33,4 +44,12 @@
 
 .questions_body {
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .questions_header {
+        & h1 {
+            font-size: 1.7rem;
+        }
+    }
 }

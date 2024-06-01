@@ -8,6 +8,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & .menu {
+        display: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
 }
 
 .header_list_options {
@@ -53,6 +60,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header_wrapper .menu {
+        display: block;
+    }
+
     .header_list_options {
         display: none;
     }
